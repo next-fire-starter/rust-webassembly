@@ -25,20 +25,20 @@ cargo install cargo-generate
 
 ```
 cargo generate --git https://github.com/rustwasm/wasm-pack-template --name myproject
-cd myproject
+cd /workspace/rust-webassembly/myproject
 ```
 
 ### コンパイル
 
 ```
-cd myproject
+cd /workspace/rust-webassembly/myproject
 wasm-pack build
 ```
 
 ### Webプロジェクトを生成
 
 ```
-cd myproject
+cd /workspace/rust-webassembly/myproject
 npm init wasm-app www
 ```
 index.jsを編集
@@ -46,23 +46,23 @@ index.jsを編集
 
 ### 依存パッケージをインストール
 ```
-cd myproject/www
+cd /workspace/rust-webassembly/myproject/www
 npm install
 ```
 
 ### ローカルのパッケージリンク
 
 ```
-cd myproject/pkg
+cd /workspace/rust-webassembly/myproject/pkg
 npm link
 
-cd myproject/www
+cd /workspace/rust-webassembly/myproject/www
 npm link myproject
 ```
 
 ## 実行
 
 ```
-cd myproject/www
+cd /workspace/rust-webassembly/myproject/www
 npm run start
 ```
